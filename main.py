@@ -148,6 +148,8 @@ def fetch():
         tokeningame = decoded.get(8, None)
         return jsonify({
             "Token": tokeningame or "N/A",
+            "open_id": open_id or "N/A",
+            "Access": actk or "N/A",                             
         })
 
     except Exception as e:
